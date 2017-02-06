@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model</title>
+	<!-- Internal Style Sheet -->
+	<style type="text/css">
+	/*
+	TAG SELECTOR
+	Applying styles to the body tag will trickle down to all child elements on the page unless they are overwritten by a more specific tag.
+	*/
+	body{
+		/*background-color: black; */
+
+		font-family: :"Helvetica Neue", Arial, sans-serif;
+		color: #555555;
+		/*font-style: italic;*/
+
+		}
+		/* First, lets use a tag selector to apply a background color to every div on our page so we can see how our layouts nests and develops */
+		div{
+			background-color: rgba(0,0,200,0.2);
+		}
+
+		/* Fixed width grid, using pixels*/
+		.container{
+			/*starter width in pixels*/
+			/*Divs are elements that display block by default. They want to take up 100% of the available space and they dont want to share horizontal space with another element. 
+
+			Block level elements can receive a width and a height to override their default size.
+
+			*/
+
+		width: 900px;
+		margin: 0 auto;
+
+		padding:10px;
+
+		/*margin-top: 100px;*/
+
+		}
+		.clear{
+			clear: both;
+		}
+
+		.clear-fix::after{
+			content: '';
+			display: block;
+			clear: both;
+			height: 0;
+			font-size: 0;
+			visibility: hidden;
+		}
+
+		.container-fluid{
+			width: 90%;
+			padding: 2%;
+			margin:0 auto;
+		}
+
+		.thumbnail-fluid{
+			width:25%;
+			height: 300px;
+			float: left;
+			margin:1%;
+		}
+		.thumbnail-border{
+			width:23%;
+			height: 300px;
+			float: left;
+			margin: 10px;
+			border-width: 5px;
+			border-style:solid;
+			border-color: #0000FF;
+			border:; 
+		}
+
+		p{
+			text-align: justify;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<p>Gil</p>
+		<div class="thumbnail">thumb1</div>
+		<div class="thumbnail">thumb2</div>
+		<div class="thumbnail">thumb3</div>
+		<br class="clear">
+	</div>
+
+<div class="container clear-fix">
+	<!-- padding !-->
+		<div class="thumbnail-fluid"></div>
+		<div class="thumbnail-fluid"></div>
+		<div class="thumbnail-fluid"></div>
+		<div class="thumbnail-fluid"></div>
+		</div>
+
+<h2>Fluid Percentage Based Layout Using Percentage</h2>
+
+<div class="containger-fluid clear">
+	<div class="thumbnail-border"></div>
+	<div class="thumbnail-border"></div>
+	<div class="thumbnail-border"></div>
+
+
+
+</div>
+
+<h2>Breaking our dimension with margins, padding, and borders with pixels</h2>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

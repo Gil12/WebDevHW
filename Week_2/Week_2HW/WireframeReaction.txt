@@ -1,0 +1,1 @@
+I thought the article was interesting. I agree with how we should try to figure out most of the details before starting to design a solution. It’s important to understand the problem beforehand, or else the design would look messy and there’ll be a lot more editing later on, which would waste time.
