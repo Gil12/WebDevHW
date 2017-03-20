@@ -1,0 +1,97 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+
+.thumb{
+	position: relative;
+	overflow:hidden;
+}
+
+.mask{
+	position: absolute;
+	top:0;
+	left: 0;
+	text-align: center;
+	padding: 2%;
+	background-color: rgba(255,255,255,0.5);
+	height: 100%;
+	opacity:0;
+	transition: all 1s ease;
+}
+
+.mask{
+	font-style: italic;
+}
+
+a.info{
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #333;
+	color:white;
+	text-decoration: none;
+}
+
+.thumb:hover .mask{
+	opacity:1;
+}
+
+.thumb:hover .mask h2,
+.thumb:hover .mask p,
+.thumb:hover .mask a{
+	opacity:0;
+	transform: scale(0);
+}
+
+,thumb img{
+	transform: scale(1);
+	transform: rotate(0deg);
+	transform
+}
+
+
+
+
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }

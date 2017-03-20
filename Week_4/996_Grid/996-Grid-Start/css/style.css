@@ -6,6 +6,35 @@ Copyright 2013, Josh Cope
 /* =============================================================================
    Site Styles
    ========================================================================== */
+.container{
+	background-color: rgba(0,0,255,0.25);
+
+}
+
+div{
+	background-color: rgba(0,0,255,0.25);
+	min-height: 100px;
+	outline: 1px solid black;
+}
+
+div:before{
+	content:attr(class);
+	background-color: #eee;
+	display: block;
+	border-bottom: 1px solid grey;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+
+
 
 /* =============================================================================
    Page Styles
@@ -16,16 +45,26 @@ Copyright 2013, Josh Cope
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	.container{
+		background-color: rgba(255,0,0,0.25);
+	}
+}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	background-color: rgba(255,255,0,0.25);
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	background-color: rgba(0,255,0,0.25);
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	background-color: rgba(0,255,255,0.25);
+}
 
 
 /* =============================================================================
