@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQ vs JS</title>
+	<script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+
+  	$('#myID').click(function(){
+  		
+  		$(this).html('You Clicked Me');
+
+  		});
+  		console.log($('p'));
+  		console.log($('.goat'));
+
+  		//document.querySelector('li');=$('li:first');
+
+
+
+  		document.getElementsByClassName('goat')=$('.goat')
+  });
+  </script>
+
+</head>
+<body>
+
+<div id="myID">This is a div to grab with a jquery selector</div>
+
+<p class="goat">Paragraph 1</p>
+<p class="goat">Paragraph 2</p>
+<p class="goat">Paragraph 3</p>
+<p class="goat">Paragraph 4</p>
+
+</body>
+</html>
